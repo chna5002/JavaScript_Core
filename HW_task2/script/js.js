@@ -22,7 +22,7 @@ let res4 = parseInt("xy");// Допишіть код, необхідно вик�
 
 /* TASK2 */
 
-let x = prompt("Enter your number (TASK2)", "");
+x = prompt("Enter your number (TASK2)", "");
 let res = x > 0 && x % 7===0 && x % 2===0;
 	console.log(res);
 
@@ -60,7 +60,7 @@ if (isAdult === true ) {
 
 /* TASK5_new */
 
-let isAdult = prompt("Скільки вам років ? (TASK5)", "");
+isAdult = prompt("Скільки вам років ? (TASK5)", "");
 if (isAdult >=18 ) {
    console.log("Ви досягли повнолітнього віку");
 } else if (isAdult <= 10) {
@@ -73,13 +73,13 @@ let p,s;
 let a = +prompt("(TASK6) ---> Введіть довжину сторони a (a>0)");
 let b = +prompt("(TASK6) ---> Введіть довжину сторони b (b>0)");
 let c = +prompt("(TASK6) ---> Введіть довжину сторони c (c>0)");
-if ((a > 0) && (b > 0) && (c > 0)) {
+if ((a > 0) && (b > 0) && (c > 0) ) {
 	p = (a+b+c)/2;
 	s = (p*(p-a)*(p-b)*(p-c)) ** 0.5;
-} else {
-	console.log("Incorect data");
+} else if ((a < 0 ) || (b < 0) || (c < 0) || (a =="" )|| (b =="") || (c == "") || (a !== Number) || (b !== Number) || (c !== Number) ) {
+	alert("Incorect data");
 }
- console.log(s.toFixed(3));
+ console.log(("S=" + s.toFixed(3)));
 
  if (((a*b)/2) == s) { 
 	console.log("Цей трикутник прямокутний!!!"); 
@@ -108,7 +108,7 @@ switch (true) {
 
 /* TASK7.2 */
 
-let hours = +(new Date()).getHours();
+hours = +(new Date()).getHours();
 if ((hours >= 0) && (hours <5)) {
 	console.log("Доброї ночі");
 } else if ((hours >= 5) && (hours <11)) {
