@@ -1,5 +1,5 @@
 /* TASK1 */
-
+/*
 let x = 1;
 let y = 2;
 
@@ -21,14 +21,14 @@ let res4 = parseInt("xy");// Допишіть код, необхідно вик�
 
 
 /* TASK2 */
-
+/*
 let x = prompt("Enter your number (TASK2)", "");
 let res = x > 0 && x % 7===0 && x % 2===0;
 	console.log(res);
 
 
 /* TASK3 */
-
+/*
 let arr = [];
 arr[0] = 25;
 arr[1] = "array";
@@ -44,13 +44,13 @@ arr.shift( );
 
 
 /* TASK4 */
-
+/*
 let cities = ["Rome", "Lviv", "Warsaw"]; 
 	console.log(cities.join("*"));
 
 
 /* TASK5_old */
-
+/*
 let isAdult = confirm("Ви досягнули повноліття ? (TASK5)");
 if (isAdult === true ) {
    console.log("Ви досягли повнолітнього віку");
@@ -59,7 +59,7 @@ if (isAdult === true ) {
 } 
 
 /* TASK5_new */
-
+/*
 let isAdult = prompt("Скільки вам років ? (TASK5)", "");
 if (isAdult >=18 ) {
    console.log("Ви досягли повнолітнього віку");
@@ -68,7 +68,7 @@ if (isAdult >=18 ) {
 } 
 
 /* TASK6 */
-
+/*
 let p,s;
 let a = +prompt("(TASK6) ---> Введіть довжину сторони a (a>0)");
 let b = +prompt("(TASK6) ---> Введіть довжину сторони b (b>0)");
@@ -87,7 +87,7 @@ if ((a > 0) && (b > 0) && (c > 0)) {
 
 
 /* TASK7.1 */
-
+/*
 let hours = +(new Date()).getHours();
 
 switch (true) {
@@ -107,7 +107,7 @@ switch (true) {
 
 
 /* TASK7.2 */
-
+/*
 let hours = +(new Date()).getHours();
 if ((hours >= 0) && (hours <5)) {
 	console.log("Доброї ночі");
@@ -118,3 +118,20 @@ if ((hours >= 0) && (hours <5)) {
 } else if ((hours >= 17) && (hours <23)) {
 	console.log("Доброго вечора");
 }
+*/
+/* TASK1 */
+
+let myArr = [2, 3, 4, 5];
+let res = 1;
+for (let i = 0; i < myArr.length; i++) {
+	res = res * myArr[i];
+}
+console.log(res);
+
+let q = 0;
+let res1 = 1;
+while ( q < myArr.length) {
+	res1*=myArr[q];
+	q++;
+}
+console.log(res1);
