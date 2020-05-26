@@ -1,0 +1,23 @@
+/*GENERAL STYLE*/
+body{
+	font-family: Arial, San-Serif;
+	font-size: 100%; 
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+ul li {
+list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+p{
+	font-size: 13px;
+	line-height: 1.3em; 
+}
+.container{
+	margin: 0 auto;
+	width: 960px;
+}
