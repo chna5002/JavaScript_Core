@@ -52,12 +52,25 @@ raiseToDegree();
 
 
 /* TASK5 */
-
+/*
 function findMin() {
-	let min = 2;
+	let min;
 	for (let i = 0; i < arguments.length; i++) {
-		min *= arguments[i]
+		min = Math.min.apply(null, arguments);
 	}
 	console.log("Min element is :  " + min);
 }
-findMin(3, 5, 8, -3, 0.2);
+findMin(3, 5, 8, -3, 0.2, 0.5);
+
+
+/* TASK6 */
+
+function findUnique(arr) {
+	let n = arr.length;
+	for (let i = 0; i < n-1; i++)
+		{ for (let j = i+1; j<n; j++) 
+	 		{ if arr[i] === arr[j] return false; }
+		}
+	return true
+}
+findUnique([1, 2, 3, 5, 3]);
