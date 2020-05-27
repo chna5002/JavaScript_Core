@@ -83,7 +83,7 @@ let res5 = findUnique([1, 5, 3, 2, 8]);
 
 function lastElem(arrSeven, x) {
 	if (x == null) return arrSeven[arrSeven.length - 1];
-	return arrSeven.slice( Math.max(arrSeven.length - x, 1));
+	return arrSeven.slice( Math.max(arrSeven.length - x, 0));
 };
 
 console.log("Task7--> " + lastElem([3, 5, 8, 10, 4]));
