@@ -30,9 +30,10 @@ for (let i = 0; i < 16; i++) {
 /*TASK3*/
 
 let k = new Array(5);
+
 function randArray() {
 	for (let i = 0; i < k.length; i++) {
-		k[i] = Math.floor((Math.random() * (500-1+1))+1);
+		k[i] = Math.floor(( Math.random() * (500-1+1))+1);
 	}
 	console.log("Task3--> " + k);
 }
@@ -42,8 +43,8 @@ randArray(k);
 /* TASK4 */
 
 function raiseToDegree() {
-	let a = Number(prompt("Task4--> Enter your number : "));
-	let b = Number(prompt("Task4--> Enter your degree for number : "));
+	let a = Number( prompt("Task4--> Enter your number : "));
+	let b = Number( prompt("Task4--> Enter your degree for number : "));
 	let res4 = parseInt(a) ** parseInt(b);
 		console.log( "Task4--> Your result : " + res4);
 		
@@ -66,10 +67,11 @@ findMin(3, 5, 8, -3, 0.2, 0.5);
 /* TASK6 */
 
 function findUnique(arr) {
-	for (let i = 0; i < arr.length - 1; i++)
-		{ for (let j = i+1; j < arr.length; j++) 
-	 		{ if (arr[i] === arr[j]) return false; }
+	for (let i = 0; i < arr.length - 1; i++) { 
+		for (let j = i+1; j < arr.length; j++) {
+		 	if (arr[i] === arr[j]) return false; 
 		}
+	}
 	return true;
 }
 
@@ -81,7 +83,7 @@ let res5 = findUnique([1, 5, 3, 2, 8]);
 
 function lastElem(arrSeven, x) {
 	if (x == null) return arrSeven[arrSeven.length - 1];
-	return arrSeven.slice(Math.max(arrSeven.length - x, 1));
+	return arrSeven.slice( Math.max(arrSeven.length - x, 1));
 };
 
 console.log("Task7--> " + lastElem([3, 5, 8, 10, 4]));
