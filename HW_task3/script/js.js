@@ -100,5 +100,3 @@ function firstUpLetter(str) {
 		return y.toUpperCase()})
 };
 alert(firstUpLetter(str));
-
-
