@@ -62,7 +62,7 @@ let stud1 = new Student( "Petro","Petrenko", 2015);
 console.log(stud1);
 console.log(stud1.showFullName("Petrovuch"));
 console.log("Current course: " + stud1.showCourse());
-
+*/
 
 /* TASK4 */
 /*
@@ -97,43 +97,39 @@ let worker1 = new Worker("John Johnson", 20, 23);
 worker1.showSalary();
 	console.log("New experience: " + worker1.showExp);
 worker1.showSalaryWithExperience();
-worker1.setExp = 1.5;
+worker1.setExp = 1.6;
 	console.log("New experience: " + worker1.showExp);
 worker1.showSalaryWithExperience();
+console.log("");
 
 let worker2 = new Worker("Tom Tomson", 35, 20);
 	console.log(worker2.fullName);
 worker2.showSalary();
 	console.log("New experience: " + worker2.showExp);
 worker2.showSalaryWithExperience();
-worker2.setExp = 1.3;
+worker2.setExp = 1.5;
 	console.log("New experience: " + worker2.showExp);
 worker2.showSalaryWithExperience();
+console.log("");
 
 let worker3 = new Worker("Andy Ander", 27, 25);
 	console.log(worker3.fullName);
 worker3.showSalary();
 	console.log("New experience: " + worker3.showExp);
 worker3.showSalaryWithExperience();
-worker3.setExp = 1.6;
+worker3.setExp = 1.3;
 	console.log("New experience: " + worker3.showExp);
 worker3.showSalaryWithExperience();
+console.log("");
 
-Worker.sort(function(a,b) { 
-	return a.salary - b.salary
-})
-
-
-/*
 let arrWorkers = [worker1, worker2 ,worker3];
 	function byField(field) {
   		return (a, b) => a[field] > b[field] ? 1 : -1;
 	}
-arrWorkers.sort(byField('this.salary'));
-arrWorkers.forEach(user => alert(user.fullName));
+arrWorkers.sort( byField("#experience"));
+arrWorkers.forEach(user => console.log( user.showSalaryWithExperience()));
 
-console.log(worker1.s);
-*/
+
 
 /* TASK5 */
 
@@ -173,3 +169,10 @@ class Circle extends GeometricFigure {
 		return area;
 	}
 }
+
+function handleFigures(figures) {
+	let result = figures.reduce(function)
+}
+
+const figures = [new Triangle(4, 5), new Square(7), new Circle(5)];
+	console.log(handleFigures(figures));
