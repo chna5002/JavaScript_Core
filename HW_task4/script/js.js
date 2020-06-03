@@ -35,16 +35,37 @@ try {
 } catch (error_age) {
 	alert(error_age.name  + " --> " + error_age.message);
 }
-*/
+
+
+/* TASK3 */
+/*
+class MonthException {
+	constructor(message) {
+		this.message = message;
+		this.name = "MonthException";
+	}
+	showMonthName(month) {
+		let months =  ["January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December"];
+			if(month >= 1 && month <= 12) {
+				return months[month-1];
+			} throw new MonthException("Incorect month number!!!")
+	}
+}
+try {
+let whatMonth = new MonthException();
+console.log(whatMonth.showMonthName(0));
+} catch (month_error) {
+	alert(month_error.name + " "+ month_error.message);
+}
 
 
 /* TASK4 */
 /*
 function showUser(id) {
 		if (id < 0) {
-			throw new Error ("ID must not be negative:  " + id[i]);
+			throw new Error ("ID must not be negative:  " + id);
 		} 
-		return id = {'id': id};
+		return {id};
 }
 try {
 	console.log(showUser(7));
@@ -53,21 +74,10 @@ try {
 }
 
 function showUser(ids) {
-	for (let i = 0; i < ids.length; i++) {
-		if (ids[i] < 0) {
-			throw new Error ("ID must not be negative:  " + id[i]);
-		}
-	} 
-	let a = {'id': id[i]};
-	return a;
+	return Object.entries(ids);
 }
-try {
-	showUser([7, -12, 44, 22]);
-	console.log(a);
-} catch (error_id) {
-	alert(error_id.name  + " --> " + error_id.message);
-}
-*/
+	
+	/*
 let result
 function showUsers(ids) {
 	for (let i = 0; i < ids.length; i++) {
@@ -85,3 +95,6 @@ try {
 } catch (error_id) {
 	alert(error_id.name  + " --> " + error_id.message);
 }
+*/
+
+
