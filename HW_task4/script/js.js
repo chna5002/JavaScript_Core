@@ -1,5 +1,5 @@
 /* TASK1 */
-/*
+
 function calcReactangleArea() {
 	let width = Number( prompt("Task1--> Enter width : "));
 	let height = Number( prompt("Task1--> Enter height : "));
@@ -18,7 +18,7 @@ try {
 }
 
 /* TASK2 */
-/*
+
 function checkAge() {
 	let age = prompt("Task2--> Enter your age : ");
 		if (age == "") {
@@ -37,6 +37,7 @@ try {
 }
 
 
+<<<<<<< HEAD
 /* TASK3 */
 /*
 class MonthException {
@@ -57,6 +58,12 @@ console.log(whatMonth.showMonthName(0));
 } catch (month_error) {
 	alert(month_error.name + " "+ month_error.message);
 }
+=======
+
+
+
+
+>>>>>>> 9727a439f354046b91c896434f62e20a399b400a
 
 
 /* TASK4 */
@@ -85,8 +92,8 @@ function showUsers(ids) {
 			throw new Error ("ID must not be negative:  " + ids[i]);
 		}
 	} 
-	result = ids.filter(function(currentValue) {
-		return currentValue > 0;
+	result = ids.filter(function(showUser) {
+		return showUser > 0;
 	});
 }
 try {
