@@ -1,5 +1,5 @@
 /* TASK1 */
-
+/*
 function calcReactangleArea() {
 	let width = Number( prompt("Task1--> Enter width : "));
 	let height = Number( prompt("Task1--> Enter height : "));
@@ -18,7 +18,7 @@ try {
 }
 
 /* TASK2 */
-
+/*
 function checkAge() {
 	let age = prompt("Task2--> Enter your age : ");
 		if (age == "") {
@@ -37,9 +37,9 @@ try {
 }
 
 
-<<<<<<< HEAD
+
 /* TASK3 */
-/*
+
 class MonthException {
 	constructor(message) {
 		this.message = message;
@@ -54,16 +54,13 @@ class MonthException {
 }
 try {
 let whatMonth = new MonthException();
-console.log(whatMonth.showMonthName(0));
+console.log(whatMonth.showMonthName(1));
 } catch (month_error) {
 	alert(month_error.name + " "+ month_error.message);
 }
-=======
 
 
 
-
->>>>>>> 9727a439f354046b91c896434f62e20a399b400a
 
 
 /* TASK4 */

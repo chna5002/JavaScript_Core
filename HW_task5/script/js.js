@@ -1,5 +1,5 @@
 /* TASK1 */
-/*
+
 let mentor = {
 		course: "JS fundamental",
 		duratoin: 3,
@@ -13,7 +13,7 @@ alert( "Task1--> " + propsCount(mentor));
 
 
 /* TASK2 */
-/*
+
 let personalInfo = {
 	firstName : "Nazar",
 	lastName : "Chornous",
@@ -33,7 +33,7 @@ showProps(personalInfo);
 
 
 /* TASK3 */
-/*
+
 class Person {
 	constructor(name,surname) {
 		this.name = name;
@@ -62,10 +62,12 @@ let stud1 = new Student( "Petro","Petrenko", 2015);
 console.log(stud1);
 console.log(stud1.showFullName("Petrovuch"));
 console.log("Current course: " + stud1.showCourse());
-*/
+
 
 /* TASK4 */
-/*
+console.log('');
+console.log("<<< TASK4 >>>");
+
 class Worker {
 	#experience = 1.2;
 	get showExp() {
@@ -132,7 +134,7 @@ arrWorkers.forEach(user => console.log( user.showSalaryWithExperience()));
 
 
 /* TASK5 */
-
+/*
 class GeometricFigure {
 	getArea() {
 		return 0;
@@ -176,3 +178,4 @@ function handleFigures(figures) {
 
 const figures = [new Triangle(4, 5), new Square(7), new Circle(5)];
 	console.log(handleFigures(figures));
+*/
