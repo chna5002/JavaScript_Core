@@ -134,7 +134,10 @@ arrWorkers.forEach(user => console.log( user.showSalaryWithExperience()));
 
 
 /* TASK5 */
-/*
+
+console.log('');
+console.log("<<< TASK5 >>>");
+
 class GeometricFigure {
 	getArea() {
 		return 0;
@@ -145,6 +148,7 @@ class GeometricFigure {
 }
 class Triangle extends GeometricFigure {
 	constructor(kat1, kat2) {
+		super();
 		this.kat1 = kat1;
 		this.kat2 = kat2;
 	}
@@ -155,6 +159,7 @@ class Triangle extends GeometricFigure {
 }
 class Square extends GeometricFigure {
 	constructor(front) {
+		super();
 		this.front = front;
 	}
 	getArea() {
@@ -164,18 +169,23 @@ class Square extends GeometricFigure {
 }
 class Circle extends GeometricFigure {
 	constructor(radius) {
+		super();
 		this.radius = radius;
 	}
 	getArea() {
-		let area = this.radius * this.radius * 3,14159;
+		let area = this.radius * this.radius * 3.14159;
 		return area;
 	}
 }
 
 function handleFigures(figures) {
-	let result = figures.reduce(function)
+	let totalArea = 0;
+	for (let i = 0; i < figures.length; i++) {
+		console.log(figures[i] instanceof GeometricFigure);
+		console.log("GeometricFigure: " + figures[i].toString() + " - area: " + figures[i].getArea());
+		totalArea += figures[i].getArea();}
+		console.log(totalArea);
 }
 
 const figures = [new Triangle(4, 5), new Square(7), new Circle(5)];
-	console.log(handleFigures(figures));
-*/
+	handleFigures(figures);
