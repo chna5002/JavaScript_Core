@@ -1,5 +1,5 @@
 /* TASK1 */
-/*
+
 function calcReactangleArea() {
 	let width = Number( prompt("Task1--> Enter width : "));
 	let height = Number( prompt("Task1--> Enter height : "));
@@ -18,7 +18,7 @@ try {
 }
 
 /* TASK2 */
-/*
+
 function checkAge() {
 	let age = prompt("Task2--> Enter your age : ");
 		if (age == "") {
@@ -60,45 +60,27 @@ console.log(whatMonth.showMonthName(1));
 }
 
 
-
-
-
 /* TASK4 */
-/*
+
 function showUser(id) {
 		if (id < 0) {
 			throw new Error ("ID must not be negative:  " + id);
 		} 
-		return {id};
-}
-try {
-	console.log(showUser(7));
-} catch (error_id) {
-	alert(error_id.name  + " --> " + error_id.message);
+		return {id:id};
 }
 
-function showUser(ids) {
-	return Object.entries(ids);
-}
-	
-	/*
-let result
 function showUsers(ids) {
-	for (let i = 0; i < ids.length; i++) {
-		if (ids[i] < 0) {
-			throw new Error ("ID must not be negative:  " + ids[i]);
+	let corectArr= [];
+	ids.forEach(function (id) {
+		try {
+			let user = showUser(id);
+			corectArr.push(user);
 		}
-	} 
-	result = ids.filter(function(showUser) {
-		return showUser > 0;
+		catch (error_id) {
+			console.log(error_id.name  + " --> " + error_id.message);
+		}
 	});
+	console.log(corectArr);
+	return corectArr;
 }
-try {
-	showUsers([7, -12, 44, 22]);
-	console.log(result);
-} catch (error_id) {
-	alert(error_id.name  + " --> " + error_id.message);
-}
-*/
-
-
+showUsers([7, -12, 44, 22]);
