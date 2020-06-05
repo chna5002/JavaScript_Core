@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task4</title>
+</head>
+<body>
+	
+	<ul id="list">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+	</ul>
+
+	<script type="text/javascript">
+		let ulChildren = document.querySelectorAll("#list>li");
+		for (let i = 0; i < ulChildren.length; i++) {
+		}
+			alert(ulChildren[0].innerHTML);
+			alert(ulChildren[ulChildren.length-1].innerHTML);
+			alert(ulChildren[1].innerHTML);
+			alert(ulChildren[3].innerHTML);
+			alert(ulChildren[2].innerHTML);
+
+		let liChild = document.getElementById("list").children;
+		for (let i = 0; i < liChild.length; i++) {
+		}
+			alert(liChild[0].innerHTML);
+			alert(liChild[liChild.length-1].innerHTML);
+			alert(liChild[1].innerHTML);
+			alert(liChild[3].innerHTML);
+			alert(liChild[2].innerHTML);
+
+	</script>
+</body>
+</html>
