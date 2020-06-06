@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task6</title>
+</head>
+<body>
+	
+	<input type="text" id="input1" value="Text1">
+	<input type="text" id="input2" value="Text2">
+
+
+
+	<script type="text/javascript">
+		let prompt1 = prompt('Enter first input',);
+		let input1 = document.getElementById("input1");
+		input1.value = prompt1;
+		let prompt2 = prompt('Enter second input',);
+		let input2 = document.getElementById("input2");
+		input2.value = prompt2;
+
+		let input11=input1.cloneNode(true);
+		let input22=input2.cloneNode(true);
+		input2.parentNode.insertBefore(input11,input2);
+		input1.parentNode.insertBefore(input22,input1);
+		input1.parentNode.removeChild(input1);
+		input2.parentNode.removeChild(input2);
+
+	</script>
+
+</body>
+</html>
