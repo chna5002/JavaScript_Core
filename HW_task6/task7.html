@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task7</title>
+</head>
+
+	<script type="text/javascript">
+		let newBody = document.createElement("body");
+		let newMain = document.createElement("main");
+		newMain.className = "mainClass check item";
+		let newDiv = document.createElement("div");
+		newDiv.id = "myDiv";
+		let newP = document.createElement("p");
+		newP.innerHTML = "First paragraph";
+
+		let html = document.querySelector("html");
+		html.append(newBody);
+		newBody.prepend(newMain);
+		newMain.prepend(newDiv);
+		newDiv.prepend(newP);
+	</script>
+</html>
