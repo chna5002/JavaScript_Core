@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task5</title>
+</head>
+<body>
+	<h1>I'am a big header!!!</h1>
+   <div id="myDiv">
+   	<p>First paragraph</p>
+      <p>Second paragraph</p>
+      <p>Third paragraph</p>
+      <p>Fourth paragraph</p>
+   </div>
+   <ul id="myList">
+   	<li>Make</li>
+      <li>me</li>
+      <li>horizontal!</li>
+   </ul>
+   <span>Make me invisible, please!</span>
+	
+	<script type="text/javascript">
+		let header = document.querySelector("h1");
+		header.style.backgroundColor = "lime";
+
+		let firstP = document.querySelector("#myDiv").children[0];
+		firstP.style.fontWeight = "700";
+
+		let secondP = document.querySelector("#myDiv").children[1];
+		secondP.style.color = "red";
+
+		let thirdP = document.querySelector("#myDiv").children[2];
+		thirdP.style.textDecoration = "underline";
+
+		let fourthP = document.querySelector("#myDiv").children[3];
+		fourthP.style.fontStyle = "italic";
+
+		let liInline = document.querySelector("#myList").children;
+		for (var i = 0; i < liInline.length; i++) {
+			liInline[i].style.listStyle = "none";
+			liInline[i].style.display = "inline";
+			liInline[i].style.marginLeft = "-4px";
+			liInline[2].innerHTML = "vertical!";
+		}
+		let invisible = document.querySelector("span");
+		invisible.style.display = "none";
+		
+		
+	</script>
+
+</body>
+</html>
