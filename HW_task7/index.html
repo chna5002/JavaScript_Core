@@ -8,7 +8,19 @@
 		<link rel="stylesheet" type="text/css" href="script/js.js">
 		
 <body>
-<!--  <script type="text/javascript">alert('nazar')</script>-->
-<script type="text/javascript" src="script/js.js"></script>
+
+<p id ='text'>I learning JavaScript events!</p> 
+<div>
+	<button type="button">Change style!</button>
+</div>
+
+<script type="text/javascript" src="script/js.js">
+	
+	function changeCSS(event) {
+		event.target.style.color = "red";
+	}
+	let change  = document.getElementById("text");
+	change.addEventListener("click", changeCSS);
+</script>
 </body>
 </html>
