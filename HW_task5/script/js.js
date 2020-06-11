@@ -92,6 +92,9 @@ class Worker {
 		console.log(this.fullName + " salary: " + salaryExp);
 		return salaryExp;
 	}
+	showSalaryExp() {
+		return this.dayRate * this.workingDays * this.#experience;
+	}
 }
 
 let worker1 = new Worker("John Johnson", 20, 23);
@@ -125,11 +128,12 @@ worker3.showSalaryWithExperience();
 console.log("");
 
 let arrWorkers = [worker1, worker2 ,worker3];
-	function byField(field) {
-  		return (a, b) => a[field] > b[field] ? 1 : -1;
-	}
-arrWorkers.sort( byField("#experience"));
-arrWorkers.forEach(user => console.log( user.showSalaryWithExperience()));
+let sortWorker = arrWorkers.sort((a, b) => {
+	return a.showSalaryExp() - b.showSalaryExp();
+	})
+for (var i = 0; i < sortWorker.length; i++) {
+	console.log(sortWorker[i].fullName + ":" + sortWorker[i].showSalaryExp());
+}
 
 
 
