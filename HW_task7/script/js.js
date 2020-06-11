@@ -24,7 +24,7 @@ setTimeout(closeOpenedWindow, 6000);
 */
 
 /* TASK2 */
-/*
+
 function changeCSS() {
 	 let changeStyle = document.getElementById("text");
 	 changeStyle.style.color = 'orange';
@@ -34,7 +34,7 @@ function changeCSS() {
 }
 document.querySelector("button").onclick = changeCSS;
 
-*/
+
 /* TASK3 */
 
 function bodyBackgroundBlue() {
@@ -90,8 +90,11 @@ addText.addEventListener("mouseenter", () =>{
 	newFocusOn.innerHTML = "Mouse on me!";
 	document.body.appendChild(newFocusOn);
 });
-addText.addEventListener("mouseouter", () =>{
+addText.addEventListener("mouseout", () =>{
 	let newFocusOff = document.createElement("p");
 	newFocusOff.innerHTML = "Mouse is not on me!";
 	document.body.appendChild(newFocusOff);
 });
+
+/* TASK6 */
+
