@@ -98,3 +98,37 @@ addText.addEventListener("mouseout", () =>{
 
 /* TASK6 */
 
+function currentWindowSize() {
+	wight = document.documentElement.clientWidth;
+	height = document.documentElement.clientHeight;
+	document.getElementById("sizeWin").innerHTML = "Width: " + wight +", " + "Height: " + height;
+}
+
+window.addEventListener("resize", currentWindowSize);
+currentWindowSize();
+
+
+/* TASK7 */
+let ourCoutry = document.getElementById("country");
+let x = document.getElementById("cities");
+ourCoutry.options[0].cities = [];
+ourCoutry.options[1].cities = ["","New-York","Montana","Boston","Chicago"];
+ourCoutry.options[2].cities = ["","Berlin","Humburg","Dotrmund","Leverkuzen"];
+ourCoutry.options[3].cities = ["","Kyev","Kharkiv","Lviv","Dnipro"];
+country.addEventListener("change", () =>{
+while (x.options.length > 0) {
+    x.options.remove(0);
+}
+ourCoutry.options[ourCoutry.selectedIndex].cities.forEach(element => {
+let option = document.createElement("option");
+			option.text = element;
+			x.add(option);
+});
+});
+
+cities.addEventListener("change", () =>{
+	document.getElementById("countryCities").innerHTML = ourCoutry.options[ourCoutry.selectedIndex].text
++"," +  cities.options[cities.selectedIndex].text
+});
+
+
