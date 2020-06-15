@@ -24,7 +24,7 @@ setTimeout(closeOpenedWindow, 6000);
 */
 
 /* TASK2 */
-
+/*
 function changeCSS() {
 	 let changeStyle = document.getElementById("text");
 	 changeStyle.style.color = 'orange';
@@ -36,7 +36,7 @@ document.querySelector("button").onclick = changeCSS;
 
 
 /* TASK3 */
-
+/*
 function bodyBackgroundBlue() {
 	let backgroundBlue = document.querySelector("body");
 	backgroundBlue.style.background = "blue";
@@ -71,7 +71,7 @@ link1.addEventListener("mouseenter", bodyBackgroundYellow);
 
 
 /* TASK4 */
-
+/*
 delItem.addEventListener("click", () =>{
 	let e = document.getElementById("optionItem");
 	e.remove(e.selectedIndex);
@@ -79,7 +79,7 @@ delItem.addEventListener("click", () =>{
 
 
 /* TASK5 */
-
+/*
 addText.addEventListener("click", () =>{
 	let newPress = document.createElement("p");
 	newPress.innerHTML = "I was pressed!";
@@ -97,7 +97,7 @@ addText.addEventListener("mouseout", () =>{
 });
 
 /* TASK6 */
-
+/*
 function currentWindowSize() {
 	wight = document.documentElement.clientWidth;
 	height = document.documentElement.clientHeight;
@@ -109,6 +109,7 @@ currentWindowSize();
 
 
 /* TASK7 */
+
 let ourCoutry = document.getElementById("country");
 let x = document.getElementById("cities");
 ourCoutry.options[0].cities = [];
@@ -131,4 +132,9 @@ cities.addEventListener("change", () =>{
 +"," +  cities.options[cities.selectedIndex].text
 });
 
+country.addEventListener("click", () =>{
+	document.getElementById("countryCities").innerHTML = ""
+});
+
+/*-----------------------------------------------*/
 
