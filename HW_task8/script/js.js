@@ -1,3 +1,5 @@
+/*TASK1*/
+
 function upperCase(b) {
 	let regExp = /^[A-Z]/;
 	if (!regExp.test(b)) {
@@ -5,8 +7,10 @@ function upperCase(b) {
 	} else {
 		console.log("String's starts with uppercase character")
 	}
-	//return;
 }
 
 upperCase('Regexp');
-  
+
+
+/*TASK2*/
+
