@@ -25,17 +25,17 @@ console.log(age4); // 26
 /* TASK3 */
 function mul(... values) {
 	return values.reduce(function(a, b) {
-	if(Number.isInteger(a)&&Number.isInteger(b))
+	if(Number(a)&&Number(b))
 		return a * b;
-	else if(Number.isInteger(a)&&!Number.isInteger(b))
+	else if(Number(a)&&!Number.isInteger(b))
 		return a ;
-	else if(!Number.isInteger(a)&&Number.isInteger(b))
+	else if(!Number.isInteger(a)&&Number(b))
 		return b;
 	else return 0;
 	});
 }
 console.log("-----TASK3-------");
-console.log(mul(1, "str", 2, 3, true));  // 6
+console.log(mul(1, null, 0.5, 0.5, "str", 2, 3, true));  // 6
 console.log(mul(null, "str", false, true)); // 0
 
 
@@ -86,3 +86,28 @@ console.log("-----TASK5-------");
 console.log(map);
 console.log(map.size); // 4
 console.log(map.get(2)); // "span"
+
+
+
+/*function mul(... values) {
+	for (let i = 0; i < values.length - 1; i++) { 
+		for (let j = i+1; j < values.length; j++) {
+			if(Number.isInteger(values[i]) && Number.isInteger(values[j]))
+				return values[i] * values[j];
+			//else if(Number(values[i]) && !Number(values[j]))
+				//return values[i] ;
+			//else if(!Number(values[i]) && Number(values[j]))
+				//return values[j];
+			else return 0;
+		}
+	}
+}
+console.log("-----TASK3-------");
+console.log(mul(1, null, 2, 3, true));  // 6
+console.log(mul(null, "str", false, true, 2, 3)); // 0
+
+*/
+
+
+
+
