@@ -4,7 +4,8 @@ const os = require("os");
 const userName = os.userInfo().username;
 http.createServer(function (request, response) {
 	response.writeHead(200, {'Content-Type': 'text/plain'});
-	response.end('aaaaaaaaaaaa');
+	response.write(`Data of request: ${personalmodule.date}`);
+	response.write(personalmodule.getMessage(userName));
+	response.end('');
 }).listen(5000);
-console.log(`Data of request: ${personalmodule.date}`);
-console.log(personalmodule.getMessage(userName));
+console.log('Server running at http://127.0.0.1:5000/');
