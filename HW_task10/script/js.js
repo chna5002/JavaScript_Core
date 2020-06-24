@@ -22,7 +22,8 @@ console.log(name4); // "Bob"
 console.log(age4); // 26
 
 
-/* TASK3 */
+/* TASK3.OLD*/
+/*
 function mul(... values) {
 	return values.reduce(function(a, b) {
 	if(Number(a)&&Number(b))
@@ -37,6 +38,28 @@ function mul(... values) {
 console.log("-----TASK3-------");
 console.log(mul(1, null, 0.5, 0.5, "str", 2, 3, true));  // 6
 console.log(mul(null, "str", false, true)); // 0
+
+
+/* TASK3.NEW */
+
+function mul(... values) {
+	let arrNumber = [];
+	values.forEach(function(num){
+		if(Number.isFinite(num) )
+			arrNumber.push(num);
+	});
+	if (arrNumber.length == 0) {
+		return 0;
+	} else {
+		return arrNumber.reduce(function(a, b) {
+			return a * b;
+		});
+	}
+	
+}
+console.log("-----TASK3-------");
+console.log( mul(null, false, 1, null, 0.5, 0.5, "str", 2, 3, true)); // 1.5
+console.log( mul(null, "str", false, true)); // 0
 
 
 /* TASK4 */
@@ -86,28 +109,3 @@ console.log("-----TASK5-------");
 console.log(map);
 console.log(map.size); // 4
 console.log(map.get(2)); // "span"
-
-
-
-/*function mul(... values) {
-	for (let i = 0; i < values.length - 1; i++) { 
-		for (let j = i+1; j < values.length; j++) {
-			if(Number.isInteger(values[i]) && Number.isInteger(values[j]))
-				return values[i] * values[j];
-			//else if(Number(values[i]) && !Number(values[j]))
-				//return values[i] ;
-			//else if(!Number(values[i]) && Number(values[j]))
-				//return values[j];
-			else return 0;
-		}
-	}
-}
-console.log("-----TASK3-------");
-console.log(mul(1, null, 2, 3, true));  // 6
-console.log(mul(null, "str", false, true, 2, 3)); // 0
-
-*/
-
-
-
-
