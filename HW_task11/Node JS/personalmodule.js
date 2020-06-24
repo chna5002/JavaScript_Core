@@ -7,6 +7,8 @@ module.exports.getMessage = function(name){
         return "Good evening, " + name;
     else if(hour > 10)
         return "Good afternoon, " + name;
-    else
+     else if(hour > 0)
+        return "Good night, " + name;
+    else if(hour > 4)
         return "Good morning, " + name;
 }
