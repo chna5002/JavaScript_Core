@@ -51,7 +51,7 @@ function mul(... values) {
 	if (arrNumber.length == 0) {
 		return 0;
 	} else {
-		return arrNumber.reduce(function(a, b) {
+		 arrNumber.reduce(function(a, b) {
 			return a * b;
 		});
 	}
