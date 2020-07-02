@@ -1,0 +1,147 @@
+* {
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  }
+
+
+html, body, input {
+  font-family: arial, sans-serif;
+}
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+
+/* [FORM] */
+#todo-wrap input {
+  box-sizing: border-box;
+  font-size: 0.9em;
+}
+#todo-wrap input[type=text] {
+  padding: 10px 8px;
+  border: 3px solid #F7A500;
+  border-radius: 20px;
+}
+
+#todo-wrap input[type=button], #todo-wrap input[type=submit] {
+  padding: 8px 5px;
+  color: #fff;
+  background: #F73827;
+  border: 2px solid #F73827;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+
+/* [CLEARFIX] */
+#todo-wrap .clearfix {
+  overflow: auto;
+}
+#todo-wrap .clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* [WRAPPER] */
+#todo-wrap {
+  max-width: 500px;
+  background: #f2f2f2;
+  padding: 20px;
+  margin: 80px auto;
+  border-radius: 20px;
+}
+
+
+/* [HEADER] */
+#todo-wrap h1 {
+  font-size: 2.5em;
+  text-align: center;
+  font-style: italic;
+  font-weight: 900;
+  margin: 0;
+  color: #F7A500;
+}
+
+
+/* [ADD] */
+#todo-form {
+  margin: 10px 0;
+}
+#todo-form input {
+  display: block;
+  float: left;
+}
+#todo-form input[type=text] {
+  width: 100%;
+  margin-bottom: 30px;
+  color: #F7A500;
+}
+/*
+#todo-form input[type=submit] {
+  width: 15%;
+  background: #1DF7B9;
+  border: 2px solid #1DF7B9;
+}
+*/
+
+
+/* [DELETE] */
+#todo-del {}
+
+
+/* [LIST ITEMS] */
+#todo-list .clearfix {
+  margin-bottom: 8px;
+}
+#todo-list .clearfix div, #todo-list .clearfix input {
+  box-sizing: border-box;
+  float: left;
+  display: block;
+}
+#todo-list .item {
+  border: 1px solid #F7A500;
+  background: #fff;
+  width: 80%;
+  padding: 10px;
+  color: #F7A500;
+  border-radius: 20px;
+}
+#todo-list .item.cx {
+  background: #FFE1D7;
+  
+}
+#todo-list .item.done {
+  background: #DCFFD7;
+  text-decoration: line-through;
+}
+#todo-list .clearfix input {
+  width: 10%;
+}
+#todo-list input.bdone {
+  background: #4AA53D;
+  border: 2px solid #4AA53D;
+  border-radius: 50%;
+}
+#todo-list input.bdone:focus {
+  background: #F7A500;
+  border: 2px solid #F7A500;
+}
+#todo-list input.bdel {
+  background: #F7A500;
+  border: 2px solid #F7A500;
+  border-radius: 50%;
+}
+#todo-list input.bdel:focus {
+  background: #4AA53D;
+  border: 2px solid #4AA53D;
+  }
