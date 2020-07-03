@@ -63,10 +63,19 @@ var todo = {
         // Add cancel button
         el = document.createElement("input");
         el.setAttribute("type", "button");
+        el.value = "\u2b8c";
+        el.classList.add("bcansel");
+        el.addEventListener("click", function () {
+          todo.status(this, 0);
+        });
+        row.appendChild(el);
+
+        el = document.createElement("input");
+        el.setAttribute("type", "button");
         el.value = "\u2718";
         el.classList.add("bdel");
         el.addEventListener("click", function () {
-          todo.status(this, 0);
+          todo.status(this, 2);
         });
         row.appendChild(el);
 
