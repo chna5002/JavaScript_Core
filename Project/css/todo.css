@@ -15,6 +15,7 @@ html, body, input {
   font-family: arial, sans-serif;
 }
 html, body {
+  background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 0;
   margin: 0;
 }
@@ -35,7 +36,7 @@ html, body {
   padding: 8px 5px;
   color: #fff;
   background: #F73827;
-  border: 2px solid #F73827;
+  border: 2px solid #F7A500;
   cursor: pointer;
   border-radius: 20px;
 }
@@ -54,11 +55,12 @@ html, body {
 
 /* [WRAPPER] */
 #todo-wrap {
-  max-width: 500px;
-  background: #f2f2f2;
+  max-width: 600px;
+  background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 20px;
   margin: 80px auto;
   border-radius: 20px;
+  box-shadow: 0px 0px 45px -6px rgba(0,0,0,0.54);
 }
 
 
@@ -75,7 +77,7 @@ html, body {
 
 /* [ADD] */
 #todo-form {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 #todo-form input {
   display: block;
@@ -96,7 +98,9 @@ html, body {
 
 
 /* [DELETE] */
-#todo-del {}
+#todo-del {
+  margin-top: 30px;
+}
 
 
 /* [LIST ITEMS] */
@@ -111,37 +115,42 @@ html, body {
 #todo-list .item {
   border: 1px solid #F7A500;
   background: #fff;
-  width: 80%;
+  width: 75%;
   padding: 10px;
   color: #F7A500;
   border-radius: 20px;
 }
 #todo-list .item.cx {
-  background: #FFE1D7;
-  
+  background: #f7797d;
+  text-decoration: line-through;
 }
 #todo-list .item.done {
-  background: #DCFFD7;
+  background: #c6ffdd;
   text-decoration: line-through;
 }
 #todo-list .clearfix input {
-  width: 10%;
+  width: 7%;
+  margin-left: 5px;
 }
 #todo-list input.bdone {
   background: #4AA53D;
-  border: 2px solid #4AA53D;
+  border: 2px solid #F7A500;
   border-radius: 50%;
 }
 #todo-list input.bdone:focus {
   background: #F7A500;
-  border: 2px solid #F7A500;
+  border: 2px solid #4AA53D;
 }
-#todo-list input.bdel {
+#todo-list input.bcansel {
   background: #F7A500;
-  border: 2px solid #F7A500;
+  border: 2px solid #4AA53D;
   border-radius: 50%;
 }
-#todo-list input.bdel:focus {
+#todo-list input.bcansel:focus {
   background: #4AA53D;
-  border: 2px solid #4AA53D;
+  border: 2px solid #F7A500;
   }
+  #todo-list input.bdel:focus {
+  background: #f7797d;
+  border-radius: 50%;
+}
