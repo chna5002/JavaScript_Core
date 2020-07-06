@@ -8,11 +8,8 @@ var todo = {
       localStorage.list = "[]";
     }
 
-    // Parse JSON
-    // [0] = Task
-    // [1] = Status : 0 not done, 1 completed, 2 cancelled
     todo.data = JSON.parse(localStorage.list);
-    todo.list();
+    todo.list();// Draw the HTML to-do list with todo.data.
   },
 
   save: function () {
@@ -70,6 +67,7 @@ var todo = {
         });
         row.appendChild(el);
 
+        // Add del button
         el = document.createElement("input");
         el.setAttribute("type", "button");
         el.value = "\u2718";
